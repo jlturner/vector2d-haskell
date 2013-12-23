@@ -83,8 +83,8 @@ remapVectorToScalar (x, y) oldMin oldMax newMin newMax = (remap x oldMin oldMax 
                                                           remap y oldMin oldMax newMin newMax)
 
                                                          
-remapVector :: Vector2D -> Vector2D -> Vector2D -> Vector2D -> Vector2D -> Vector2D
-remapVector (x, y) (oldMinX, oldMinY) (oldMaxX, oldMaxY) (newMinX, newMinY) (newMaxX, newMaxY) = (remap x oldMinX oldMaxX newMinX newMaxX,
+remapVectorToVectors :: Vector2D -> Vector2D -> Vector2D -> Vector2D -> Vector2D -> Vector2D
+remapVectorToVectors (x, y) (oldMinX, oldMinY) (oldMaxX, oldMaxY) (newMinX, newMinY) (newMaxX, newMaxY) = (remap x oldMinX oldMaxX newMinX newMaxX,
                                                                                                   remap y oldMinY oldMaxY newMinY newMaxY)
 
                                                                                                  
